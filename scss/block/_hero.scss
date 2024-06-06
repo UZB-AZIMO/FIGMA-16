@@ -1,0 +1,46 @@
+.hero{
+    padding: 10px 0;
+    background-color: white;
+&__wrapper{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+@media ( max-width:1035px){
+    .hero{
+        background-color: wheat;
+        .hero__text{
+            display: none;
+        }
+        .hero__logo{
+            display: none;
+        }
+        .logo{
+            padding-top: 20px;
+            margin: auto;
+            width: 100px;
+        }
+    }
+}
+
+
+
+
+
+
+@media ( max-width:400px){
+    .hero{
+        display: none;
+    }
+}

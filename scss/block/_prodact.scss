@@ -1,0 +1,210 @@
+.prodact{
+    margin-top: 50px;
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .shops{
+        display: none;
+    }
+}
+.prodact__card{
+    border-radius: 5px;
+    width:calc(33.3% - 13.3px);
+    border: 1px solid #eae9e9;
+    background-color: white;
+    
+}
+.card__body{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border: 1px solid #eae9e9;
+    align-items: center;
+}
+.card__title{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+.card__text{
+    font-weight: 200;
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 14px;
+    width: 85%;
+    color: #383838;
+}
+.card__item{
+    color: red;
+    margin-left: 10px;
+}
+.card__img{
+width: 100%;
+}
+.body__btn{
+    padding: 10px 20px;
+    border: 1px solid #eae9e9;
+background-color: white;
+font-weight: 600;
+transition: .7s;
+&:hover{
+    background-color:wheat;
+    color: red;
+}
+
+}
+.prodact__btn{
+margin: auto;    
+    width:calc(33.3% - 13.3px);
+    padding: 10px 0;
+    border: 1px solid #4E9DD3;
+    background-color: white;
+    font-size:20px;
+    font-weight: 400;
+    transition: .8s;
+    &:hover{
+        background-color: black;
+        border: 1px solid black;
+        color: white;
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
+@media ( max-width:770px){
+    .prodact{
+.prodact__wrapper{
+    display: flex;
+    gap: 15px;
+}
+    }
+    .prodact__card{
+        width:calc(33.3% - 10px);
+    }
+}
+
+
+
+
+
+@media ( max-width:690px){
+    .prodact{
+margin:30;
+    }
+    .body__btn{
+        padding:5px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    }
+
+    .card__title{
+        font-size: 14px;
+        font-weight: 700;
+        margin: 15px 0;
+        padding: 0 10px;
+    }
+    .card__text{
+        font-size: 12px;
+        font-weight: 300;
+        width: 90%;
+    }
+    .card__item{
+        font-size: 12px;
+        font-weight: 600;
+    } 
+.prodact__btn{
+    width:calc(33.3% - 10px);
+    font-size: 16px;
+    padding: 5px 10px;
+}
+}
+
+
+@media ( max-width:605px){
+    .prodact{
+        .prodact__wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+    .prodact__card{
+        width:calc(50% - 5px);
+        padding: 0;
+    }
+    .prodact__btn{
+        display: none;
+    }
+}
+
+
+@media ( max-width:431px){
+    .prodact{
+        .shops{
+            display: block;
+            font-size: 20px;
+            padding: 10px;
+            border: 1px solid #eae9e9 ;
+            background-color: white;
+            transition: .7s;
+            &:hover{
+                background-color: blue;
+                color: red;
+            }
+        }
+    }
+    .card__title{
+        font-size: 15px;
+        font-weight: 600;
+
+    }
+    .card__text{
+        font-size: 12px;
+        margin: 5px 0;
+    }
+    .card__item{
+        font-size:15px;
+        font-weight: 500;
+    }
+    .body__btn{
+        display: none;
+    }
+  
+}
+
+
+
+@media ( max-width:390px){
+    .prodact{
+        .prodact__wrapper{
+            display: flex;
+            gap: 4px;
+        }
+        }
+
+        .card__text{
+            font-size: 12px;
+            font-weight: 300;
+            margin: 2px 0;
+        }
+
+        .card__item{
+            font-size:13px;
+            font-weight: 400;
+        }
+        .card__title{
+            font-size: 13px;
+            font-weight: 600;
+    
+        }
+        .prodact__card{
+            width:calc(50% - 2px);
+        }
+    }
+
